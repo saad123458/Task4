@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, orange);
+      color: white;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #home {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #home .intro {
+      max-width: 60%;
+    }
+
+    #home img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid black;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: orange;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: orange;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      #home {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #home .intro {
+        max-width: 100%;
+      }
+
+      #home img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Samani Saad</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="intro">
+      <h2>Hello, I'm Samani Saad</h2>
+      <p>I'm a passionate Web Developer focused on building beautiful and performant websites. I love working with HTML, CSS, JavaScript, and modern frameworks to create user-friendly experiences.</p>
+    </div>
+    <img src="n.jpg" />
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a self-taught web developer with a strong foundation in front-end and back-end technologies. I have completed several freelance projects , building everything from landing pages to full-stack applications.</p>
+    <br />
+    <h3>Education</h3>
+    <ul>
+      <li> I am in TYBSc in Information Technology – RJ College, Mumbai</li>
+      
+    </ul>
+    <br />
+    <h3>Experience</h3>
+    <ul>
+        <li>Developed responsive landing pages using HTML, CSS, and JavaScript .</li>
+        <li>Developed many statik website using HTML & CSS for 1st & 2nd year projects .</li>
+
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript & Java</div>
+      <div class="card">M.E.R.N</div>
+      <div class="card">C & C++</div>
+      <div class="card">Python & PLSQL  & Php </div>
+     
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio showcasing my skills and projects. Built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Todo App</h3>
+        <p>A simple React app that lets users manage their daily tasks with local storage support.</p>
+      </div>
+      <div class="card">
+        <h3> Tic-Tac-Toe Web App</h3>
+        <p>A simple web app built with HTML, CSS, and JavaScript, allowing users to play Tic-Tac-Toe against the computer.</p>
+        </div>
+        <div class="card">
+          <h3>work life balance </h3>
+          <p>make a static website for work-life balance tips and resources.</p>
+      </div>
+      <div class="card">
+          <h3>TextUtils</h3>
+          <p>A text manipulation tool built with React.js, allowing users to perform various text operations.</p>
+      </div>
+    
+  </section>
+
+  <footer>
+    &copy; 2025 Samani Saad .
+  </footer>
+
+</body>
+</html>
